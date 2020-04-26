@@ -2,4 +2,4 @@
 Fullstack E-Commerce Website, utilizing ReactJS Framework
 
 ## Contributor
-@mention pi2912
+@pi2912
