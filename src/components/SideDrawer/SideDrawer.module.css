@@ -1,0 +1,55 @@
+.SideDrawer {
+    height: 100%;
+    background-color: white;
+    box-shadow: 1px 0px 7px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    max-width: 320px;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+.SideDrawer.Open {
+    height: 100%;
+    background-color: white;
+    box-shadow: 1px 0px 7px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    max-width: 320px;
+    z-index: 200;
+    transform: translateX(0);
+}
+
+.SideDrawer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.SideDrawer li {
+    padding: 20px;
+}
+
+.Spacer {
+    flex: 1;
+}
+
+.clickable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clickable:hover {
+    background-color: #f2f2f2;
+}

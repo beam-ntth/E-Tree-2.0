@@ -1,0 +1,58 @@
+.Listing {
+    height: 150px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+}
+
+.ImgSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+}
+
+.ImgSec img {
+    max-height: 100%;
+    max-width: auto;
+    cursor: pointer;
+}
+
+.Rhs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.Title {
+    padding: 10px 10px 0px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Title:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.Brand {
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: gray;
+}
+
+.Description {
+    padding: 10px;
+}
+
+.Price {
+    padding: 10px;
+    font-weight: bold;
+}
+
+

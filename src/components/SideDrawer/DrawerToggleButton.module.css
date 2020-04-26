@@ -1,0 +1,16 @@
+.ToggleButton {
+    padding: 1;
+    box-sizing: border-box;
+    background-color: #232f3e;
+    border-radius: 8px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.ToggleButton:focus {
+    outline: none;
+}
+
+.ToggleButton:hover {
+    border: 1px solid white;
+}

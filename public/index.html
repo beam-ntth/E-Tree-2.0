@@ -24,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>E-Tree</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +39,28 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBOPeDR45xbW-flNTwBv5XGyEMJstvzSKs",
+        authDomain: "earthxhack-2592f.firebaseapp.com",
+        databaseURL: "https://earthxhack-2592f.firebaseio.com",
+        projectId: "earthxhack-2592f",
+        storageBucket: "earthxhack-2592f.appspot.com",
+        messagingSenderId: "525979922104",
+        appId: "1:525979922104:web:3b37ef7ca18139eb17ce4d",
+        measurementId: "G-25E5SPBH71"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
