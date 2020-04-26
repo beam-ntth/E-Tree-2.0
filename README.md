@@ -12,6 +12,14 @@ Functionalities:
 * Access to featured products for each categories using side drawer.
 * Add to wishlist function - user can go back anytime
 
+To start using it, simply clone the respository, then enter:
+### npm -install
+
+This will download all the necessary packages for this code. After it is done, type:
+### npm start
+
+You should see the application pop up on your http://localhost:3000/ !
+
 ## Contributor
 * [beam-ntth](https://github.com/beam-ntth) - **Natheethorn Teacharuangchit**
 * [pi2912](https://github.com/pi2912) - **Piyush Verma**
