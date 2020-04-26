@@ -23,3 +23,4 @@ You should see the application pop up on your http://localhost:3000/ !
 ## Contributor
 * [beam-ntth](https://github.com/beam-ntth) - **Natheethorn Teacharuangchit**
 * [pi2912](https://github.com/pi2912) - **Piyush Verma**
+* [agomezll](https://github.com/agomezll) - **Andrea Gomez Lloret**
