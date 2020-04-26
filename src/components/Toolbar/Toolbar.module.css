@@ -57,6 +57,12 @@ input[type="text"] {
     padding-left: 5px;
 }
 
+@media screen and (max-width: 420px) {
+    input {
+        width: 95%;
+    }
+}
+
 .Heart {
     margin-left: 1rem;
     cursor: pointer;
@@ -91,6 +97,4 @@ input[type="text"] {
         transform: translate3d(1px, 0, 0);
     }
 }
-
-
 

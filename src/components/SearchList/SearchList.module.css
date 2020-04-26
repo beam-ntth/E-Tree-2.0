@@ -7,6 +7,28 @@
     border-bottom: 2px solid lightgray;
 }
 
+@media screen and (max-width: 420px) {
+    .Title {
+        font-weight: 500 !important;
+        font-size: 14px !important;
+    }
+
+    .ImgSec {
+        height: 80% !important;
+        width: 120px !important;
+    }
+
+    .Brand {
+        font-weight: 500 !important;
+        font-size: 12px !important;
+    }
+
+    .Price {
+        font-weight: 500 !important;
+        font-size: 11px !important;
+    }
+}
+
 .ImgSec {
     display: flex;
     flex-direction: column;
