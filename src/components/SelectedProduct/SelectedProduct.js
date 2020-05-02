@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './SelectedProduct.module.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { withRouter } from 'react-router-dom';
 
 import Ratings from 'react-rating';
 import { MdStar, MdStarBorder } from 'react-icons/md';
@@ -11,7 +12,6 @@ import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutline
 
 
 const SelectedProduct = (props) => {
-
     return (
         <div className={classes.Primary}>
             <div className={classes.LHS}>
@@ -51,6 +51,7 @@ const SelectedProduct = (props) => {
                 >
                 Visit Official Website
                 </Button>
+                
                 <Button
                 variant="contained"
                 color="secondary"
@@ -62,7 +63,7 @@ const SelectedProduct = (props) => {
                 </Button>
             </div>
         </div>
-    );
+    ); 
 };
 
-export default SelectedProduct;
+export default withRouter(SelectedProduct);

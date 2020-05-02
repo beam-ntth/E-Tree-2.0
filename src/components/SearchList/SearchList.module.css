@@ -38,8 +38,8 @@
 }
 
 .ImgSec img {
-    max-height: 100%;
-    max-width: auto;
+    height: 140px;
+    width: auto;
     cursor: pointer;
 }
 

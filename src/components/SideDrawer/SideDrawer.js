@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './SideDrawer.module.css';
+import { Link } from 'react-router-dom';
 import { FiChevronRight } from 'react-icons/fi';
 
 const SideDrawer = props => {
@@ -11,24 +12,36 @@ const SideDrawer = props => {
         <nav className={drawerClasses.join(' ')}>
             <ul> 
                 <li>Shop By Category</li>
-                <li className={classes.clickable} onClick={props.clickKitchen}>
+                <Link to='/kitchen' style={{textDecoration: 'none'}}>
+                    <li className={classes.clickable}>
                     Household & Kitchen<div className={classes.Spacer}></div><FiChevronRight size={30}/>
-                </li>
-                <li className={classes.clickable} onClick={props.clickClothes}>
-                    Clothing<div className={classes.Spacer}></div><FiChevronRight size={30}/>
-                </li>
-                <li className={classes.clickable} onClick={props.clickKids}>
+                    </li>
+                </Link>
+                <Link to='/clothes' style={{textDecoration: 'none'}}>
+                    <li className={classes.clickable}>
+                        Clothing<div className={classes.Spacer}></div><FiChevronRight size={30}/>
+                    </li>
+                </Link>
+                <Link to='/kids' style={{textDecoration: 'none'}}>
+                    <li className={classes.clickable}>
                     For Kids<div className={classes.Spacer}></div><FiChevronRight size={30}/>
-                </li>
-                <li className={classes.clickable} onClick={props.clickOffice}>
+                    </li>
+                </Link>
+                <Link to='/office' style={{textDecoration: 'none'}}>
+                    <li className={classes.clickable}>
                     Office<div className={classes.Spacer}></div><FiChevronRight size={30}/>
-                </li>
+                    </li>
+                </Link>
+                <Link to='/personal' style={{textDecoration: 'none'}}>
                 <li className={classes.clickable} onClick={props.clickPersonal}>
                     Personal Care<div className={classes.Spacer}></div><FiChevronRight size={30}/>
                 </li>
+                </Link>
+                <Link to='/misc' style={{textDecoration: 'none'}}>
                 <li className={classes.clickable} onClick={props.clickMisc}>
                     Miscellaneous<div className={classes.Spacer}></div><FiChevronRight size={30}/>
                 </li>
+                </Link>
             </ul>
         </nav>
     );
