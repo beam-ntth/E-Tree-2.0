@@ -1,6 +1,6 @@
 ## E-Tree V2.0
 - This version improves the milti-pages feeling utilizing react-router module.
-- Removed about 400 lines of code from the App.js by using react routing and reorganized some codes.
+- Removed about 500 lines of code from the App.js by using react routing and reorganized some codes.
 
 ## E-Tree
 This project is for EarthxHack hackathon. The objective of this hackathon is to create ANYTHING that has a positive impact to the environment || the world.
