@@ -35,7 +35,7 @@ class App extends Component {
       brand: "",
       des: "",
       price: "",
-      rating:"",
+      rating: "",
       url: "",
     },
     heartPageObjects: [],
@@ -44,49 +44,49 @@ class App extends Component {
 
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
-      return {sideDrawerOpen: !(prevState.sideDrawerOpen)};
+      return { sideDrawerOpen: !(prevState.sideDrawerOpen) };
     })
   };
 
   backdropClickHandler = () => {
-    this.setState({sideDrawerOpen: false});
+    this.setState({ sideDrawerOpen: false });
   }
 
   render() {
     /* Sidebar Config */
     let backdrop;
     if (this.state.sideDrawerOpen) {
-      backdrop = <BackDrop click={this.backdropClickHandler} />;
+      backdrop = <BackDrop click={ this.backdropClickHandler } />;
     }
 
     return (
-        <div className={classes.App}>
-          <Toolbar 
-          drawerClickHandler={this.drawerToggleClickHandler} 
+      <div className={ classes.App }>
+        <Toolbar
+          drawerClickHandler={ this.drawerToggleClickHandler }
           // isSearch={this.searchClickHandler}
-          clickCart={this.cartPageClickHandler} />
-          <SideDrawer 
-          show={this.state.sideDrawerOpen} 
-          clickHide={this.backdropClickHandler}
-          />
-          {backdrop}
-          {/* {searchCountBar} */}
-          <main className={classes.Main}>
-            <Switch>
-              <Route path='/favorite' exact component={HeartPage} />
-              <Route path='/kitchen' exact render={() => <KitchenPage images={images.kitchenPage} />} />
-              <Route path='/clothes' exact render={() => <ClothesPage images={images.clothesPage} />} />
-              <Route path='/kids' exact render={() => <KidsPage images={images.kidsPage} />} />
-              <Route path='/office' exact render={() => <OfficePage images={images.officePage} />} />
-              <Route path='/personal' exact render={() => <PersonalPage images={images.personalPage} />}/>
-              <Route path='/misc' exact render={() => <MiscPage images={images.miscPage} />} />
-              <Route path='/search' exact component={SearchPage} />
-              <Route path='/' exact render={() => <FrontPage images={images.frontPage}/>} />
-            </Switch>
-          </main>
-        </div>
+          clickCart={ this.cartPageClickHandler } />
+        <SideDrawer
+          show={ this.state.sideDrawerOpen }
+          clickHide={ this.backdropClickHandler }
+        />
+        { backdrop }
+        {/* {searchCountBar} */ }
+        <main className={ classes.Main }>
+          <Switch>
+            <Route path='/favorite' exact component={ HeartPage } />
+            <Route path='/kitchen' exact render={ () => <KitchenPage images={ images.kitchenPage } /> } />
+            <Route path='/clothes' exact render={ () => <ClothesPage images={ images.clothesPage } /> } />
+            <Route path='/kids' exact render={ () => <KidsPage images={ images.kidsPage } /> } />
+            <Route path='/office' exact render={ () => <OfficePage images={ images.officePage } /> } />
+            <Route path='/personal' exact render={ () => <PersonalPage images={ images.personalPage } /> } />
+            <Route path='/misc' exact render={ () => <MiscPage images={ images.miscPage } /> } />
+            <Route path='/search' exact component={ SearchPage } />
+            <Route path='/' exact render={ () => <FrontPage images={ images.frontPage } /> } />
+          </Switch>
+        </main>
+      </div>
     );
-  } 
+  }
 }
 
 export default App;

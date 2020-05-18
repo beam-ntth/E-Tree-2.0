@@ -9,38 +9,38 @@ const SideDrawer = props => {
         drawerClasses.push(classes.Open);
     }
     return (
-        <nav className={drawerClasses.join(' ')}>
-            <ul> 
+        <nav className={ drawerClasses.join(' ') }>
+            <ul>
                 <li>Shop By Category</li>
-                <Link to='/kitchen' style={{textDecoration: 'none'}}>
-                    <li className={classes.clickable}>
-                    Household & Kitchen<div className={classes.Spacer}></div><FiChevronRight size={30}/>
+                <Link to='/kitchen' style={ { textDecoration: 'none' } }>
+                    <li className={ classes.clickable }>
+                        Household & Kitchen<div className={ classes.Spacer }></div><FiChevronRight size={ 30 } />
                     </li>
                 </Link>
-                <Link to='/clothes' style={{textDecoration: 'none'}}>
-                    <li className={classes.clickable}>
-                        Clothing<div className={classes.Spacer}></div><FiChevronRight size={30}/>
+                <Link to='/clothes' style={ { textDecoration: 'none' } }>
+                    <li className={ classes.clickable }>
+                        Clothing<div className={ classes.Spacer }></div><FiChevronRight size={ 30 } />
                     </li>
                 </Link>
-                <Link to='/kids' style={{textDecoration: 'none'}}>
-                    <li className={classes.clickable}>
-                    For Kids<div className={classes.Spacer}></div><FiChevronRight size={30}/>
+                <Link to='/kids' style={ { textDecoration: 'none' } }>
+                    <li className={ classes.clickable }>
+                        For Kids<div className={ classes.Spacer }></div><FiChevronRight size={ 30 } />
                     </li>
                 </Link>
-                <Link to='/office' style={{textDecoration: 'none'}}>
-                    <li className={classes.clickable}>
-                    Office<div className={classes.Spacer}></div><FiChevronRight size={30}/>
+                <Link to='/office' style={ { textDecoration: 'none' } }>
+                    <li className={ classes.clickable }>
+                        Office<div className={ classes.Spacer }></div><FiChevronRight size={ 30 } />
                     </li>
                 </Link>
-                <Link to='/personal' style={{textDecoration: 'none'}}>
-                <li className={classes.clickable} onClick={props.clickPersonal}>
-                    Personal Care<div className={classes.Spacer}></div><FiChevronRight size={30}/>
-                </li>
+                <Link to='/personal' style={ { textDecoration: 'none' } }>
+                    <li className={ classes.clickable } onClick={ props.clickPersonal }>
+                        Personal Care<div className={ classes.Spacer }></div><FiChevronRight size={ 30 } />
+                    </li>
                 </Link>
-                <Link to='/misc' style={{textDecoration: 'none'}}>
-                <li className={classes.clickable} onClick={props.clickMisc}>
-                    Miscellaneous<div className={classes.Spacer}></div><FiChevronRight size={30}/>
-                </li>
+                <Link to='/misc' style={ { textDecoration: 'none' } }>
+                    <li className={ classes.clickable } onClick={ props.clickMisc }>
+                        Miscellaneous<div className={ classes.Spacer }></div><FiChevronRight size={ 30 } />
+                    </li>
                 </Link>
             </ul>
         </nav>
